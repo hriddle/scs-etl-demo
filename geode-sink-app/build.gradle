@@ -1,0 +1,13 @@
+dependencies {
+    compile(group: 'org.springframework.boot', name: 'spring-boot-starter', version: '1.5.3.RELEASE') {
+        exclude(module: 'commons-logging')
+    }
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-stream-binder-kafka', version: '1.2.0.RELEASE'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-stream-binder-rabbit', version: '1.2.0.RELEASE'
+    compile(group: 'org.springframework.cloud', name: 'spring-cloud-spring-service-connector', version: '1.2.3.RELEASE') {
+        exclude(module: 'log4j')
+    }
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-cloudfoundry-connector', version: '1.2.3.RELEASE'
+    compile project(':geode-sink-core')
+    compile project(':geode-sink-extension')
+}

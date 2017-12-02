@@ -1,0 +1,9 @@
+dependencies {
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-stream', version: '1.2.1.RELEASE'
+    compile group: 'org.springframework.integration', name: 'spring-integration-java-dsl', version: '1.2.1.RELEASE'
+    compile group: 'org.apache.geode', name: 'geode-core', version: '1.1.1'
+    compile project(':geode-sink-common')
+    testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '1.5.3.RELEASE') {
+        exclude(module: 'commons-logging')
+    }
+}

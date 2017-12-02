@@ -1,0 +1,11 @@
+dependencies {
+    testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '1.5.3.RELEASE') {
+        exclude(module: 'commons-logging')
+    }
+    testCompile group: 'org.springframework.cloud', name: 'spring-cloud-stream-test-support', version: '1.2.1.RELEASE'
+    testCompile project(':jdbc-event-source-core')
+    testCompile project(':jdbc-event-processor-core')
+    testCompile project(':jdbc-event-processor-extension')
+    testCompile project(':geode-sink-core')
+    testCompile project(':geode-sink-extension')
+}

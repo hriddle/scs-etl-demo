@@ -1,0 +1,7 @@
+dependencies {
+    compile group: 'org.springframework', name: 'spring-context', version: '4.3.8.RELEASE'
+    compile project(':geode-sink-common')
+    testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '1.5.3.RELEASE') {
+        exclude(module: 'commons-logging')
+    }
+}

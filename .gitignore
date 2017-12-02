@@ -47,14 +47,14 @@ Thumbs.db
 .factorypath
 *.iml
 *.ipr
+out
 
 # Maven generated files #
 ######################
 .mvn
 target
 
-
-
-
-
-
+# Gradle generated files #
+######################
+build
+.gradle

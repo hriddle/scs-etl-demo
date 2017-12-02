@@ -1,0 +1,6 @@
+dependencies {
+    compile project(':jdbc-event-processor-common')
+    testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '1.5.3.RELEASE') {
+        exclude(module: 'commons-logging')
+    }
+}
